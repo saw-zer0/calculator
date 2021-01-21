@@ -1,0 +1,31 @@
+body{
+    background-color: gray;
+}
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    border-color: white;
+}
+.output{
+    grid-area: 1/1/2/5;
+    background-color: rgba(0,0,0,55%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px
+}
+
+.span-two{
+    grid-column: span 2;
+}
